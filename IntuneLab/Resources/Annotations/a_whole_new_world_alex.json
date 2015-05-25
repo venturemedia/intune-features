@@ -1,0 +1,356 @@
+[
+  {
+    "division": 0,
+    "division_count": 3072,
+    "measure_index": 0,
+    "time_stamp": 3022
+  },
+  {
+    "division": 768,
+    "division_count": 3072,
+    "measure_index": 0,
+    "time_stamp": 4038
+  },
+  {
+    "division": 1152,
+    "division_count": 3072,
+    "measure_index": 0,
+    "time_stamp": 4527
+  },
+  {
+    "division": 1920,
+    "division_count": 3072,
+    "measure_index": 0,
+    "time_stamp": 5516
+  },
+  {
+    "division": 2304,
+    "division_count": 3072,
+    "measure_index": 0,
+    "time_stamp": 6038
+  },
+  {
+    "division": 0,
+    "division_count": 3072,
+    "measure_index": 1,
+    "time_stamp": 6994
+  },
+  {
+    "division": 1152,
+    "division_count": 3072,
+    "measure_index": 1,
+    "time_stamp": 8520
+  },
+  {
+    "division": 1536,
+    "division_count": 3072,
+    "measure_index": 1,
+    "time_stamp": 8955
+  },
+  {
+    "division": 2304,
+    "division_count": 3072,
+    "measure_index": 1,
+    "time_stamp": 9846
+  },
+  {
+    "division": 0,
+    "division_count": 3072,
+    "measure_index": 2,
+    "time_stamp": 10696
+  },
+  {
+    "division": 768,
+    "division_count": 3072,
+    "measure_index": 2,
+    "time_stamp": 11603
+  },
+  {
+    "division": 1152,
+    "division_count": 3072,
+    "measure_index": 2,
+    "time_stamp": 12097
+  },
+  {
+    "division": 1920,
+    "division_count": 3072,
+    "measure_index": 2,
+    "time_stamp": 13019
+  },
+  {
+    "division": 2304,
+    "division_count": 3072,
+    "measure_index": 2,
+    "time_stamp": 13529
+  },
+  {
+    "division": 0,
+    "division_count": 3072,
+    "measure_index": 3,
+    "time_stamp": 14443
+  },
+  {
+    "division": 1536,
+    "division_count": 3072,
+    "measure_index": 3,
+    "time_stamp": 16159
+  },
+  {
+    "division": 0,
+    "division_count": 3072,
+    "measure_index": 4,
+    "time_stamp": 18166
+  },
+  {
+    "division": 768,
+    "division_count": 3072,
+    "measure_index": 4,
+    "time_stamp": 19091
+  },
+  {
+    "division": 1152,
+    "division_count": 3072,
+    "measure_index": 4,
+    "time_stamp": 19618
+  },
+  {
+    "division": 1536,
+    "division_count": 3072,
+    "measure_index": 4,
+    "time_stamp": 20100
+  },
+  {
+    "division": 1920,
+    "division_count": 3072,
+    "measure_index": 4,
+    "time_stamp": 20619
+  },
+  {
+    "division": 2304,
+    "division_count": 3072,
+    "measure_index": 4,
+    "time_stamp": 21142
+  },
+  {
+    "division": 0,
+    "division_count": 3072,
+    "measure_index": 5,
+    "time_stamp": 22276
+  },
+  {
+    "division": 768,
+    "division_count": 3072,
+    "measure_index": 5,
+    "time_stamp": 23339
+  },
+  {
+    "division": 1536,
+    "division_count": 3072,
+    "measure_index": 5,
+    "time_stamp": 24351
+  },
+  {
+    "division": 2304,
+    "division_count": 3072,
+    "measure_index": 5,
+    "time_stamp": 25413
+  },
+  {
+    "division": 0,
+    "division_count": 3072,
+    "measure_index": 6,
+    "time_stamp": 26412
+  },
+  {
+    "division": 768,
+    "division_count": 3072,
+    "measure_index": 6,
+    "time_stamp": 27439
+  },
+  {
+    "division": 1152,
+    "division_count": 3072,
+    "measure_index": 6,
+    "time_stamp": 28041
+  },
+  {
+    "division": 2304,
+    "division_count": 3072,
+    "measure_index": 6,
+    "time_stamp": 29546
+  },
+  {
+    "division": 2688,
+    "division_count": 3072,
+    "measure_index": 6,
+    "time_stamp": 30074
+  },
+  {
+    "division": 768,
+    "division_count": 3072,
+    "measure_index": 7,
+    "time_stamp": 32094 
+  },
+  {
+    "division": 2304,
+    "division_count": 3072,
+    "measure_index": 7,
+    "time_stamp": 33705
+  },
+  {
+    "division": 0,
+    "division_count": 3072,
+    "measure_index": 8,
+    "time_stamp": 34653
+  },
+  {
+    "division": 768,
+    "division_count": 3072,
+    "measure_index": 8,
+    "time_stamp": 35723
+  },
+  {
+    "division": 1152,
+    "division_count": 3072,
+    "measure_index": 8,
+    "time_stamp": 36286
+  },
+  {
+    "division": 1920,
+    "division_count": 3072,
+    "measure_index": 8,
+    "time_stamp": 37311
+  },
+  {
+    "division": 2304,
+    "division_count": 3072,
+    "measure_index": 8,
+    "time_stamp": 37889
+  },
+  {
+    "division": 0,
+    "division_count": 3072,
+    "measure_index": 9,
+    "time_stamp": 38955
+  },
+  {
+    "division": 1152,
+    "division_count": 3072,
+    "measure_index": 9,
+    "time_stamp": 40553
+  },
+  {
+    "division": 1536,
+    "division_count": 3072,
+    "measure_index": 9,
+    "time_stamp": 41049
+  },
+  {
+    "division": 2304,
+    "division_count": 3072,
+    "measure_index": 9,
+    "time_stamp": 41987
+  },
+  {
+    "division": 0,
+    "division_count": 3072,
+    "measure_index": 10,
+    "time_stamp": 42919
+  },
+  {
+    "division": 768,
+    "division_count": 3072,
+    "measure_index": 10,
+    "time_stamp": 43882
+  },
+  {
+    "division": 1152,
+    "division_count": 3072,
+    "measure_index": 10,
+    "time_stamp": 44399
+  },
+  {
+    "division": 1920,
+    "division_count": 3072,
+    "measure_index": 10,
+    "time_stamp": 45321
+  },
+  {
+    "division": 2304,
+    "division_count": 3072,
+    "measure_index": 10,
+    "time_stamp": 45828
+  },
+  {
+    "division": 0,
+    "division_count": 3072,
+    "measure_index": 11,
+    "time_stamp": 46852
+  },
+  {
+    "division": 1536,
+    "division_count": 3072,
+    "measure_index": 11,
+    "time_stamp": 48599
+  },
+  {
+    "division": 0,
+    "division_count": 3072,
+    "measure_index": 12,
+    "time_stamp": 50494
+  },
+  {
+    "division": 768,
+    "division_count": 3072,
+    "measure_index": 12,
+    "time_stamp": 51503
+  },
+  {
+    "division": 1152,
+    "division_count": 3072,
+    "measure_index": 12,
+    "time_stamp": 52076
+  },
+  {
+    "division": 1536,
+    "division_count": 3072,
+    "measure_index": 12,
+    "time_stamp": 52686
+  },
+  {
+    "division": 1920,
+    "division_count": 3072,
+    "measure_index": 12,
+    "time_stamp": 53244
+  },
+  {
+    "division": 2304,
+    "division_count": 3072,
+    "measure_index": 12,
+    "time_stamp": 53792
+  },
+  {
+    "division": 0,
+    "division_count": 3072,
+    "measure_index": 13,
+    "time_stamp": 54847
+  },
+  {
+    "division": 768,
+    "division_count": 3072,
+    "measure_index": 13,
+    "time_stamp": 55892
+  },
+  {
+    "division": 1536,
+    "division_count": 3072,
+    "measure_index": 13,
+    "time_stamp": 56906
+  },
+  {
+    "division": 2304,
+    "division_count": 3072,
+    "measure_index": 13,
+    "time_stamp": 57879
+  }
+]
