@@ -14,10 +14,16 @@
       location = "group:Submodules/HDF5Swift/HDF5.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Submodules/PlotKit/PlotKit.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Submodules/Surge/Surge.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Submodules/Surge/Surge.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Submodules/PlotKit/PlotPlayground.playground">
    </FileRef>
    <FileRef
       location = "group:PSDPlayground.playground">

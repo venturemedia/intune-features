@@ -6,18 +6,25 @@
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "5C82FCF1EA1655AFBCAB69A2687CA1DC303D6A3B" : 0,
     "8885304170388162BA4AB3491A37DBFA386A7FBE" : 0,
+    "50D5798637F452545D39CC8E6CCEA3F8746CA8A9" : 0,
     "9F65A476A58933AE6B22EAE730A194955F98FC66" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "51D3B196-BADD-4F03-92F4-6DD205465466",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "5C82FCF1EA1655AFBCAB69A2687CA1DC303D6A3B" : "intune-lab\/",
     "8885304170388162BA4AB3491A37DBFA386A7FBE" : "intune-lab\/Submodules\/HDF5Swift\/",
+    "50D5798637F452545D39CC8E6CCEA3F8746CA8A9" : "intune-lab\/Submodules\/PlotKit\/",
     "9F65A476A58933AE6B22EAE730A194955F98FC66" : "intune-lab\/Submodules\/Surge\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "IntuneLab",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "IntuneLab.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:aleph7\/PlotKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "50D5798637F452545D39CC8E6CCEA3F8746CA8A9"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:venturemedia\/intune-lab.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
