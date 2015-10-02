@@ -13,3 +13,6 @@
 [submodule "Submodules/PlotKit"]
 	path = Submodules/PlotKit
 	url = git@github.com:aleph7/PlotKit.git
+[submodule "Submodules/HDF5Swift"]
+	path = Submodules/HDF5Swift
+	url = git@github.com:aleph7/HDF5Swift.git

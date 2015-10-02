@@ -11,6 +11,9 @@
       location = "group:AudioKit/AudioKit.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Submodules/HDF5Swift/HDF5.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Submodules/Surge/Surge.xcodeproj">
    </FileRef>
    <FileRef
