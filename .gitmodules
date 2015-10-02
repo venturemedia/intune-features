@@ -10,3 +10,6 @@
 [submodule "Submodules/Surge"]
 	path = Submodules/Surge
 	url = git@github.com:aleph7/Surge.git
+[submodule "Submodules/PlotKit"]
+	path = Submodules/PlotKit
+	url = git@github.com:aleph7/PlotKit.git
