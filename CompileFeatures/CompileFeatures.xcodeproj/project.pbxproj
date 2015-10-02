@@ -236,6 +236,7 @@
 				8CFF440B1BBDDB4C00FADE17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
