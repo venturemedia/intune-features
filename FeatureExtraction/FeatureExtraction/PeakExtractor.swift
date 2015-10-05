@@ -41,7 +41,7 @@ public class PeakExtractor {
     class func choosePeaks(input: [Point]) -> [Point] {
         var chosenPeaks = [Point]()
         
-        var currentPeakRange = Interval(min: 0, max: 0)
+        var currentPeakRange = ClosedInterval<Double>(0, 0)
         for peak in input {
             if currentPeakRange.contains(peak.x) {
                 if let lastPeak = chosenPeaks.last where lastPeak.y < peak.y {
@@ -58,12 +58,12 @@ public class PeakExtractor {
         return chosenPeaks
     }
 
-    class func binCutoffRange(freq: Double) -> Interval {
+    class func binCutoffRange(freq: Double) -> ClosedInterval<Double> {
         let note = freqToNote(freq)
         
         let upperBound = noteToFreq(note + minimumNoteDistance)
         let lowerBound = noteToFreq(note - minimumNoteDistance)
         
-        return Interval(min: lowerBound, max: upperBound)
+        return ClosedInterval<Double>(lowerBound, upperBound)
     }
 }
