@@ -22,6 +22,7 @@ class FeatureCompiler {
     let peakCount = 10
     let notes = 24...96
     var featureSize: Int
+    let RMSThreshold = 0.05
 
     let fft: FFT
     let fb: Double
@@ -47,29 +48,49 @@ class FeatureCompiler {
         var features = [Feature]()
         var data = [Double](count: sampleCount, repeatedValue: 0.0)
         for example in examples {
-            var featureSet = Feature(peakCount: peakCount, noteCount: notes.count)
-            featureSet.label = example.label
+            var featureSet = [Feature]()
             
             let audioFile = AudioFile(filePath: example.filePath)!
             assert(audioFile.sampleRate == 44100)
             
-            audioFile.readFrames(&data, count: sampleCount)
-            
-            let psd = sqrt(fft.forwardMags(data))
-            
-            let fftPoints = (0..<psd.count).map{ Point(x: fb * Double($0), y: psd[$0]) }
-            let peaks = PeakExtractor.process(fftPoints).sort{ $0.y > $1.y }
-            if peaks.count >= peakCount {
-                featureSet.peaks = Array(peaks[0..<peakCount])
-            } else {
-                featureSet.peaks = [Point](count: peakCount, repeatedValue: Point())
-                featureSet.peaks.replaceRange((0..<peaks.count), with: peaks)
-            }
+            var rms = Double(1)
+            var currFrame = 0
+            while rms > RMSThreshold {
+                guard audioFile.readFrames(&data, count: sampleCount) == sampleCount else {
+                    print("EOF reached for file: " + example.filePath)
+                    break
+                }
                 
-            let bands = BandExtractor.process(spectrumData: psd, notes: notes, baseFrequency: fb)
-            featureSet.bands = bands
+                var currentFeature = Feature(peakCount: peakCount, noteCount: notes.count)
+                currentFeature.label = example.label
+                
+                let gain = exp2(Double(arc4random_uniform(2)) - 1.0)
+                data = data.map{ return $0 * gain }
+                
+                let psd = sqrt(fft.forwardMags(data))
+                
+                let fftPoints = (0..<psd.count).map{ Point(x: fb * Double($0), y: psd[$0]) }
+                let peaks = PeakExtractor.process(fftPoints).sort{ $0.y > $1.y }
+                if peaks.count >= peakCount {
+                    currentFeature.peaks = Array(peaks[0..<peakCount])
+                } else {
+                    currentFeature.peaks = [Point](count: peakCount, repeatedValue: Point())
+                    currentFeature.peaks.replaceRange((0..<peaks.count), with: peaks)
+                }
+                
+                let bands = BandExtractor.process(spectrumData: psd, notes: notes, baseFrequency: fb)
+                currentFeature.bands = bands
+                
+                rms = rmsq(data)
+                currentFeature.RMS = rms
+                
+                featureSet.append(currentFeature)
+                
+                audioFile.currentFrame = currFrame
+                currFrame += sampleCount / 2
+            }
             
-            features.append(featureSet)
+            features.appendContentsOf(featureSet)
         }
         return features
     }
@@ -116,7 +137,7 @@ class FeatureCompiler {
 
         let labelType = HDF5.Datatype.copy(type: .Int)
         let labelDataspace = Dataspace(dims: [UInt64(labels.count)])
-        let labelsDataset = HDF5.Dataset.create(file: hdf5File, name: "labels", datatype: labelType, dataspace: labelDataspace)
+        let labelsDataset = HDF5.Dataset.create(file: hdf5File, name: "label", datatype: labelType, dataspace: labelDataspace)
         labelsDataset.writeInt(labels)
     }
 
