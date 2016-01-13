@@ -112,14 +112,15 @@ func readData(filePath: String, datasetName: String) -> ([Double], [Int]) {
     guard let dataset = file.openDoubleDataset(datasetName) else {
         fatalError("Failed to open Dataset")
     }
-
-    let data = try! dataset.read([0..])
+    
+    let span = [HyperslabIndexType](count: dataset.extent.count, repeatedValue: HyperslabIndex(start: 0, end: (0..).endIndex - 1))
+    let data = try! dataset.read(span)
     return (data, dataset.space.dims.map{ Int($0) })
 }
 
 func createLayerFromFile(filePath: String, datasetName: String) -> InnerProductLayer {
     let (weights, dims) = readData(filePath, datasetName: "\(datasetName)___weights")
-    let weightsMatrix = transpose(RealMatrix(rows: dims[0], columns: dims[1], elements: weights))
+    let weightsMatrix = RealMatrix(rows: dims[0], columns: dims[1], elements: weights)
     print("Loaded \(datasetName) weights with \(dims[0]) rows and \(dims[1]) columns")
 
     let (biases, bdims) = readData(filePath, datasetName: "\(datasetName)___biases")
